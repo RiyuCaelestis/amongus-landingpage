@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+body {
+    font-family: 'Garamond', 'Georgia';
+}
+
+.header {
+    min-height: 75px; /*check to see if this is best practice */
+    background-color: #e23232;
+    color: rgb(235, 224, 224);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.hero {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-color: #111010;
+    color: rgb(235, 224, 224);
+    gap: 20px;
+    }
+
+.hero-text {
+    display: flex;
+    flex: 1;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+       }
+
+.hero h1 {
+    font-size: 18px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.image-container {
+    flex: 1;
+    width: auto;
+    height: auto;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+    .image-container img {display: none;}
+ 
+}
+
+
+.information {
+    height: auto;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 4%;
+    background-color: #111010;
+    color: rgb(235, 224, 224);
+    }
+
+.info-title {
+    font-size: 18px;
+    font-weight: bolder;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 6%;
+}
+
+.text {
+    max-width: 200px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.group img {
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+}
+
+.requirements-panel {
+    height: auto;
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 6%;
+    padding-bottom: 5%;
+    background-color: #111010;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgb(235, 224, 224);
+}
+
+.requirements {
+    font-size: 18px;
+    font-style: comic sans;
+}
+
+
+.call-to-action {
+    height: auto;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 6%;
+    padding-bottom: 7%;
+    background-color: #111010;
+    text-align: center;
+}
+
+.cta-box {
+    background-color: #e23232;
+    border-radius: 15px;
+    border:2px solid rgb(235, 224, 224);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    color: rgb(235, 224, 224);
+    padding: 40px;
+}
+
+.sign-up {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.hard-enough {
+    font-size: 18px;
+}
+
+.sign-up-button {
+    padding:7px 14px;
+    background-color: #111010;
+    color: rgb(235, 224, 224);
+    font-weight: bold;
+    border-radius: 4px;
+    color: rgb(235, 224, 224);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer{
+    min-height: 75px; /*check to see if this is best practice */
+    background-color: #e23232;
+    color: rgb(235, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.flier {
+	pointer-events: none;
+}
+
+.flier > * {
+        animation: fly 50s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+} 
+
+h1 {
+font-size: 35px;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.video-container {
+    width: 500px; 
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
